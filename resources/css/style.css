@@ -40,7 +40,7 @@ header {
 header .title {
     align-self: center;
     margin-left: 50px;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     justify-content: left;
     
@@ -54,8 +54,6 @@ header nav {
     
 
 }
-
-
 
 header .navbar {
     width: 500px;
@@ -82,6 +80,72 @@ nav .navbar .login {
 nav .navbar .login:hover {
     background-color: #1b8e98;
     padding: 10px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--fourth-color);
+}
+
+main .main-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: linear-gradient(90deg, #37b7c3 0%, #ebf4f6 100%);
+    justify-content: flex-end;
+    align-items: center;
+}
+main .main-content .main-contentInfo {
+    width: 50%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main-content .main-contentInfo h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 20px;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+.main-content .main-contentInfo p{
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 40px 20px;
+}
+
+main .main-content .main-contentInfo div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-content button{
+    height: 36px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+main .main-content button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    color: black;
+}
+
+@media (min-width: 1000px)
+{
+    main {
+        width: 1000px;
+        margin: 0 auto;
+    }
 }
 
 
