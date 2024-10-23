@@ -8,6 +8,7 @@ El proyecto consiste en una aplicación web sencilla para gestionar citas médic
 
 #### Funcionamiento de la Aplicación
 - La primera vez que el usuario accede a la aplicación, debe registrarse para poder hacer citas.
+- Tambien habran usuarios con un rol de administrador que sera el encargado de llenar la based e datos desde el frontend.
 - Los usuarios registrados pueden acceder al módulo de búsqueda de médicos para encontrar especialistas según sus necesidades.
 - Los médicos pueden ser buscados por distintos criterios: especialidad, ubicación, y disponibilidad.
 - Los usuarios pueden añadir servicios adicionales a su cita, como resultados de exámenes médicos o consultas en línea.
