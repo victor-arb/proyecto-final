@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     usuarios {
         SERIAL id_usuario PK
@@ -52,7 +53,7 @@ erDiagram
         DATE fecha_cita
         TIME hora_cita
         estado_cita estado_cita
-        DECIMAL(10,2) costo_total
+        DECIMAL costo_total
         TIMESTAMP created_at
     }
 
@@ -60,7 +61,7 @@ erDiagram
         SERIAL id_servicio PK
         VARCHAR(100) nombre_servicio
         TEXT descripcion
-        DECIMAL(10,2) costo_servicio
+        DECIMAL costo_servicio
         TIMESTAMP created_at
     }
 
