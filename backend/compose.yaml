@@ -1,0 +1,20 @@
+name: backend
+services:
+  api: 
+    build: api
+    env_file:
+      - ./api/.env
+    ports:
+      - 8081:8080
+  
+  db:
+    build: db
+    env_file:
+      - ./db/.env
+  
+  pgadmin:
+    image: dpage/pgadmin4
+    ports:
+      - 80:80
+    env_file:
+      - .env
