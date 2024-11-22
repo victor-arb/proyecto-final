@@ -1,7 +1,6 @@
-FROM node:22
+FROM node:20-alpine
 WORKDIR /myapp
-COPY src/package*.json .
+COPY package*.json .
 RUN npm install
-COPY  src/ ./
-CMD [ "node", "app.js"]
-# CMD ["/bin/ls", "-lR", "controllers" ]
+COPY  . .
+CMD [ "npm","start" ]
