@@ -1,0 +1,378 @@
+:root {
+    /*Paleta de colores*/
+    --primary-color: #071952; /*header*/
+    --secondary-color: #088395; /*seccion principal*/
+    --third-color: #37B7C3; /*seccion principal*/
+    --fourth-color: #EBF4F6; /*Fondo*/
+
+    /* background-color: #37b7c3;
+    background-image: linear-gradient(90deg, #37b7c3 0%, #ebf4f6 100%); */
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%; /*10px*/
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 25px;
+}
+header .title {
+    align-self: center;
+    margin-left: 50px;
+    font-size: 3rem;
+    color: white;
+    justify-content: left;
+    
+}
+
+header nav {
+    justify-content: right;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+
+}
+
+header .navbar {
+    width: 500px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .navbar a{
+    margin-right: 10px;
+    color: white;
+}
+nav .navbar a:hover{
+    background-color: #088395;
+    padding: 20px;
+}
+nav .navbar .login {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    padding: 10px;
+}
+nav .navbar .login:hover {
+    background-color: #1b8e98;
+    padding: 10px;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--fourth-color);
+}
+
+main .main-content {
+    width: 100%;
+    height: 50%;
+    min-height: 300px;
+    display: flex;
+    background-image: linear-gradient(90deg, #37b7c3 0%, #ebf4f6 100%);
+    justify-content: flex-end;
+    align-items: center;
+}
+main .main-banner {
+    width: 60%;
+    height: auto;
+    margin:0;
+    padding: 0;
+}
+main .main-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin:0;
+    
+}
+main .main-content .main-contentInfo {
+    width: 50%;
+    height: 80%;
+    min-height: 250px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main-content .main-contentInfo h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 20px;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+.main-content .main-contentInfo p{
+    font-size: 1.4rem;
+    text-align: left;
+    margin: 40px 20px;
+}
+
+main .main-content .main-contentInfo div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-content button{
+    height: 36px;
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+main .main-content button a{
+    text-decoration: none;
+    color: white;
+}
+main .main-content button a:hover{
+    text-decoration: underline;
+    color: white;
+    
+}
+main .main-content button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    color: black;
+    background-color: #065966;
+}
+
+main .our-services .service-title {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .our-services .service-item h2 {
+    margin: 0 auto;
+}
+
+main .our-services .our-services-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main .our-services .service-item {
+    height: 200px;
+    margin: 0 15px;
+    background-image: linear-gradient(90deg,#088395 0%, #37b7c3 100%);
+    background-color: #6969692f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+main .our-services .service-item h3{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+main .our-services .service-item p{
+    font-size: 1.1rem;
+}
+
+main .our-services div {
+    display: flex;
+    justify-content: center;
+}
+main .our-services button  {
+    margin: 20px auto;
+
+    background-color: var(--secondary-color);
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-top: 20px;
+
+    
+}
+
+main .our-services button:hover{
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    color: black;
+}
+
+
+/*Seccion nosotros*/
+main .ours {
+    width: 10%;
+    min-height: 400px;
+   /*  background-color: rgba(131, 132, 132, 0.351); */
+
+    background-image: url('../imgs/doctor-nurses-special-equipment.jpg');
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+
+}
+main .ours .ours-content {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    font-size: 1.3rem;
+    background-color: #d8d5d589;
+    margin: 70px auto;
+}
+main .ours .ours-title{
+    font-size: 2.5rem;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.ours .ours-content .ours-infoLeft{
+    justify-content: left;
+    padding: 20px;
+}
+.ours .ours-content .ours-infoRight{
+    justify-content: Right;
+    padding: 20px;
+}
+.ours .ours-content .ours-infoRight button{
+
+    background-color: var(--fourth-color);
+    border: 1px solid var(--secondary-color);
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-top: 20px;
+
+    
+}
+.ours .ours-content .ours-infoRight button a{
+    text-decoration: none;
+    color:black;  
+}
+.ours .ours-content .ours-infoRight button a:hover{
+    text-decoration: underline;
+    color:white;  
+}
+
+.ours .ours-content .ours-infoRight button:hover{
+    background-color: var(--third-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    color: white;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+    color: var(--third-color);
+    transition: color 0.3s ease;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid var(--secondary-color);
+}
+
+.footer-bottom p {
+    font-size: 1.4rem;
+    color: white;
+}
+
+
+
+
+
+@media (min-width: 1000px)
+{
+    main {
+        width: 1000px;
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
+
+
+
+
